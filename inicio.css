@@ -1,0 +1,570 @@
+@font-face {
+    font-family: grafite;
+    src: url(GraffitiYouth.otf);
+}
+
+@import url('https://fonts.cdnfonts.com/css/bagel-fat-one');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#home .texto-landingpage-eletronico {
+    margin: 25px;
+
+}
+
+#home .texto-landingpage-eletronico h1 {
+    text-align: left;
+    color: #12408e;
+    font-size: 6rem;
+    font-family: 'Gamon Trial', sans-serif;
+    -webkit-text-stroke: 2px#35c538;
+    text-shadow: 10px 10px #0c295c;
+    margin-left: 15px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+#home .texto-landingpage-eletronico h1 span {
+
+    font-family: 'Gamon Trial', sans-serif;
+    letter-spacing: 3px;
+    color: #35c538;
+    font-size: 6rem;
+    -webkit-text-stroke: 2px #12408e;
+    text-shadow: 10px 10px #0c295c;
+}
+
+.texto-lixo {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    width: 500px;
+    
+}
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-tvs {
+    height: 500px;
+    margin-top: 100px;
+}
+
+.texto-ld {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 15px;
+
+}
+
+
+
+/* ---------- MENU HAMBURGER ---------*/
+
+#menu-hamburger {
+    z-index: 2;
+}
+
+#menu-hbg-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: #12408e;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 22px;
+}
+
+.nav li {
+    list-style: none;
+    padding: 12px 0;
+}
+
+.nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #1dee5b, #10ac12);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: #ffffff;
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+/* ------------parte anterior */
+/*
+.nav-list a {
+    padding-block: 16px;
+}
+
+.hamburguerMenu {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #095792;
+    cursor: pointer;
+}
+
+.hamburguerMenu::before,
+.hamburguerMenu::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #70b7ec;
+    margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+    .hamburguer {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(50, 55, 121);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+}
+ */
+
+/* ---------- FIM MENU HAMBURGER ---------- */
+
+/*-------------------------   INICIO      DOS     CARDS   --------------------------*/
+#imgs-container {
+    margin: 40px;
+    width: 23.5%;
+    gap: 60px;
+    display: flex;
+}
+
+#imgs-container .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 30px;
+}
+
+.card-container .card-botao button {
+    padding: 11px;
+    border: 1px solid #35c538;
+    box-shadow: 10px 10px #0c295c;
+    border-radius: 5px;
+    background-color: #12408e;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+.card-container .card-botao button a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-img img {
+    border: 1px solid #35c538;
+    box-shadow: 10px 10px #0c295c;
+    max-width: 50vh;
+    height: 200px;
+}
+
+.card-text h3 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Gamon Trial', sans-serif;
+    color: #12408e;
+    text-decoration: underline #35c538;
+}
+
+.card-text p {
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #111111;
+}
+
+/*-------------------   FIM      DOS     CARDS   ---------------------*/
+
+/*      TRANSIÇÕES     */
+
+#imgs-container .card1 {
+    transition: transform 0.4s;
+}
+
+#imgs-container .card1:hover {
+    transform: scale(1.05);
+}
+
+
+#imgs-container .card2 {
+    transition: transform 0.4s;
+}
+
+#imgs-container .card2:hover {
+    transform: scale(1.05);
+}
+
+#imgs-container .card3 {
+    transition: transform 0.4s;
+}
+
+#imgs-container .card3:hover {
+    transform: scale(1.05);
+}
+
+
+/*   FIM TRANSIÇÕES    */
+
+
+/*---------------------       INICIO DOS HOVERS     ------------------*/
+
+
+.card-container .card-botao button:hover {
+    background-color: #0c295c;
+
+}
+
+.card-container .card-botao button a:hover {
+    color: #1dee5b;
+}
+
+/*---------------------       FIM DOS HOVERS     ------------------*/
+
+
+
+/*---------------------      CONTADOR       ------------------*/
+
+.barra-container {
+    height: 30vh;
+    width: 100%;
+    background-color: #12408e;
+    display: flex;
+}
+
+.barra-contador {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.barra-item img,
+.barra-item p,
+.barra-item h2 {
+    height: 32px;
+    color: rgb(255, 255, 255);
+
+}
+
+.barra-h2 {
+    display: flex;
+    justify-content: center;
+    /* font-size: 40px; */
+}
+
+/* ------ Dark Mode ------ */
+
+/* .dark-mode *{
+    transition: all 0.5s linear;
+}
+
+.dark-mode body {
+    background-color: #15202b;
+}
+
+.dark-mode button{
+    color: white;
+}
+
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode h1 span {
+    color: #2bb82d;
+    -webkit-text-stroke-color: #135014;
+}
+
+.dark-mode #botaoReciclar {
+    background-color: #102a43;
+    color: #ffffff;
+}
+
+.dark-mode nav {
+    background-color: #101922;
+}
+
+.dark-mode nav ul li a {
+    color: #ffffff;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #2bb82d;
+}
+
+.dark-mode .cards-text h3{
+    color: #7dd05b;
+}
+
+.dark-mode .cards-container .card {
+    border: 1px solid black;
+}
+
+.dark-mode .cards-container .cards-icon {
+    background-color: #102a43;
+}
+
+.dark-mode cards-container button {
+    border: 1px solid #001449;
+    background-color: #102a43;
+}
+
+.dark-mode .cards-container button a {
+    color: #f9f9f9;
+}
+
+.dark-mode .cards-container button {
+    border: 1px solid black;
+}
+
+.dark-mode .barra-container {
+    background-color: #15202b;
+    border: solid black 1px;
+}
+
+.dark-mode .barra-item img,
+.dark-mode .barra-item p,
+.dark-mode .barra-item h2 {
+    height: 32px;
+    color: white;
+
+}
+
+.dark-mode .footer-container h3 {
+    color: #3be13d;
+  
+}
+
+.dark-mode .footer-container{
+    background-color: #101922;
+}
+
+.dark-mode .footerb button {
+    color: black;
+    background: #ffffff00;
+}
+
+.dark-mode .footerb button:hover {
+    color: #2bb82d;
+}
+
+.dark-mode #footer-empresas-h2{
+    color: white;
+    background-color: #2bb82d;
+}
+
+.dark-mode p{
+    color: white;
+} */
+
+/* ---------- TEMA ESCURO ---------- */
+.dark-mode {
+    background-color: #101922;
+}
+
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode nav {
+    background-color: #162738;
+}
+
+.dark-mode .footer-container {
+    background-color: #162738;
+}
+
+.dark-mode .wave-svg-header {
+    fill: #162738;
+    transition: all 0.1s linear;
+}
+
+.dark-mode .barra-container {
+    background-color: #162738;
+}
+
+.dark-mode .wave-svg-footer {
+    fill: #162738;
+    transition: all 0.1s linear;
+}
+
+.dark-mode .card-container .card-text h3 {
+    color: #87D962;
+}
+
+/* ---------- FIM DO TEMA ESCURO ---------- */
+
+@media (max-width:320px) {}
+
+@media (max-width:480px) {
+
+    #home,
+    .cards-container,
+    .footer-empresas,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-landingpage-eletronico {
+        width: 80%;
+    }
+
+    .texto-landingpage-eletronico span {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .cards-container,
+    .cards {
+        width: 80%;
+    }
+
+    #footer-empresas-h2 {
+        max-width: 70%;
+        font-size: 2.5em;
+    }
+
+    .footer-container,
+    .footer-container h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-container div:not(.ct) {
+        margin-bottom: 50px;
+    }
+
+    .footer-empresas img {
+        height: 160px;
+    }
+
+    #logo img {
+        height: 400px;
+    }
+
+    #imgs-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .barra-h2 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .barra-item p {
+        font-size: 1.1em;
+    }
+
+}
+
+
+
+@media (max-width:1024px) {}

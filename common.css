@@ -1,0 +1,172 @@
+@import url('https://fonts.cdnfonts.com/css/gamon-trial');
+
+*{
+    transition: all 0.5s linear;
+}
+
+/* ----- Header ----- */
+nav {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #12408e;
+    padding: 20px;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------ondinhaaaaa -----------------*/
+.wave-svg-header {
+    fill: #12408e;
+}
+
+.wave-svg-footer {
+    fill: #12408e;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-align: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #2bb82d;
+}
+
+#dark-icon{
+    background-image: url(./Icons/light\ mode.svg);
+    height: 24px;
+}
+
+
+/* ----- Footer ----- */
+
+.footer-container h3 {
+    color: #3be13d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+
+
+}
+
+.footer-container {
+    display: flex;
+    background-color: #12408e;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-contatos {
+    text-decoration: none;
+}
+
+.footer-contatos li {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    font-family: poppins;
+
+}
+
+.footer-contatos li:hover {
+    color: #2bb82d;
+}
+
+
+
+.footerb li {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.footerb li:hover {
+    color: #2bb82d;
+}
+
+.footer-empresas {
+    gap: 80px;
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+}
+
+#footer-empresas-h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    color: white;
+    background-color: #2bb82d;
+    border-radius: 10px;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+/* Contatos do Footer */
+.ct h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ct {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contatos li,
+.footerb li {
+    text-align: left;
+}
+
+.footerb li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ct span {
+    color: #2bb82d;
+    margin-top: 7px;
+}
+
+footer svg {
+    margin-bottom: -80px;
+}
+
+.footer-empresas img{
+    height: 130px;
+}
+
+#logo img {
+    height: 300px;
+}
+
+.dark-mode #dark-icon{
+    background-image: url(./Icons/dark\ mode.svg);
+}

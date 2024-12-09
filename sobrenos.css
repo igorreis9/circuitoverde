@@ -1,0 +1,93 @@
+.sobrenos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenos-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.membro {
+    width: 60%;
+    margin: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.sobrenos-text{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.membro img {
+    height: 150px;
+    border-radius: 10px;
+}
+
+.sobre1 img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.sobre1 p {
+    font-size: 17px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+}
+.julia{
+    background-color: #12408e44;
+padding: 22px;
+border-radius: 5px;
+}
+.kai{
+    background-color: #12408e44;
+padding: 22px;
+border-radius: 5px;
+}
+.thomas{
+    background-color: #12408e44;
+padding: 22px;
+border-radius: 5px;
+}
+.meirelles{
+    background-color: #10102256;
+    padding: 22px;
+    border-radius: 5px;  }
+
+
+.maria{
+    background-color: rgba(80, 154, 76, 0.337);
+    padding: 22px;
+    border-radius: 5px;
+}
+.igor{
+    background-color: #10102256;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+
+/* ---------- MODO ESCURO ---------- */
+
+.dark-mode{
+    background-color: #101922;
+
+}
+
+.dark-mode nav{
+    background-color: #162738;
+}
+
+.dark-mode h2{
+    color: #ffffff;
+}
+
+/* ---------- FIM DO MODO ESCURO ---------- */
